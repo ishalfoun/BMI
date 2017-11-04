@@ -17,7 +17,10 @@ import javafx.stage.Stage;
  *
  * @author 1241616
  */
-public class BMI1241616 extends Application {
+public class Main extends Application {
+    
+    private final Logger log = LoggerFactory.getLogger(this.getClass()
+            .getName());
     
     @Override
     public void start(Stage primaryStage) {

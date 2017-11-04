@@ -34,5 +34,17 @@ public class Person {
         this.height = new SimpleDoubleProperty(height);
     }
     
+    public double getBMI()
+    {
+        if (measurement.get() == "english")
+        {
+            return (weight.get()*703)/(height.get()*height.get());
+        }
+        else if (measurement.get() == "metric")
+        {
+            return (weight.get())/(height.get()*height.get());
+        }
+        return 1.0;
+    }
     
 }
